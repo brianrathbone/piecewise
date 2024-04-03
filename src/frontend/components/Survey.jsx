@@ -27,6 +27,7 @@ export default function Survey(props) {
   };
 
   const uploadFormData = formData => {
+    console.log(location);
     let status;
     fetch(`/api/v1/forms/${formId}/submissions`, {
       method: 'POST',

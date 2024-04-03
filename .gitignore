@@ -120,3 +120,12 @@ test.sqlite3
 
 # development credentials
 .dev
+
+# vectortile development process
+vectortiles/*tracts*
+vectortiles/*sqlite3
+vectortiles/*-geo*.json
+vectortiles/*mbtiles
+vectortiles/fcc*
+vectortiles/mlab*
+vectortiles/piecewise*
