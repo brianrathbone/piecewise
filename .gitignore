@@ -117,3 +117,6 @@ dev.sqlite3
 
 # test database
 test.sqlite3
+
+# development credentials
+.dev
