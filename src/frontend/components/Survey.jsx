@@ -24,7 +24,7 @@ export default function Survey(props) {
   const [testsComplete, setTestsComplete] = React.useState(false);
   const [submitButton, setSubmitButton] = React.useState(null);
 
-  console.log('Test console.'); // @TODO: This is a test console. Need to remove after the test
+  console.log('Test console. 123'); // @TODO: This is a test console. Need to remove after the test
 
   const onFinish = (finished, results, location) => {
     if (finished) {
