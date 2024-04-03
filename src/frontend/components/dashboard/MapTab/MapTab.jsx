@@ -73,7 +73,10 @@ export default function MapTab({ mapboxKey }) {
   useEffect(() => {
     if (!currentLayer) return;
 
-    if (currentLayer.includes('_pct')) {
+    if (
+      currentLayer.includes('_pct') ||
+      currentLayer.includes('_percent_over')
+    ) {
       setFillDomain([0, 1]);
     } else if (currentLayer === 'median_income') {
       setFillDomain([0, 100000]);
@@ -82,7 +85,7 @@ export default function MapTab({ mapboxKey }) {
       currentLayer.includes('median_dl') ||
       currentLayer.includes('median_ul')
     ) {
-      setFillDomain([0, 1000]);
+      setFillDomain([0, 250]);
     } else if (currentLayer.includes('provider_count')) {
       setFillDomain([0, 50]);
     }
